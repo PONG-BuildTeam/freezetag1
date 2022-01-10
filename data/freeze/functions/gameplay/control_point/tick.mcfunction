@@ -1,2 +1,2 @@
 #Freezing
-function freeze:gameplay/general/freezing/tick
+function freeze:gameplay/general/freezing/tick/tick
