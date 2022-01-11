@@ -7,3 +7,4 @@ execute at @s run playsound minecraft:block.amethyst_cluster.place master @a ~ ~
 effect clear @s minecraft:slowness
 effect clear @s minecraft:jump_boost
 tag @s remove FTFrozen
+execute unless entity @a[tag=FTFrozen] run schedule clear freeze:gameplay/general/freezing/tick/staggered_tick
