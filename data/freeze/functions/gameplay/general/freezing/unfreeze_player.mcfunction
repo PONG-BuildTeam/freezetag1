@@ -6,5 +6,6 @@ execute at @s run particle minecraft:block ice ~ ~1.5 ~ 0.5 0.8 0.5 100 25 force
 execute at @s run playsound minecraft:block.amethyst_cluster.place master @a ~ ~ ~ 1 1.75
 effect clear @s minecraft:slowness
 effect clear @s minecraft:jump_boost
+effect clear @s minecraft:weakness
 tag @s remove FTFrozen
 execute unless entity @a[tag=FTFrozen] run schedule clear freeze:gameplay/general/freezing/tick/staggered_tick
