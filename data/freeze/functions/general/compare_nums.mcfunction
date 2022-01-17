@@ -1,0 +1,2 @@
+execute if score $num1 compare_nums = $num2 compare_nums run scoreboard players set $is_same compare_nums 1
+execute unless score $num1 compare_nums = $num2 compare_nums run scoreboard players set $is_same compare_nums 0

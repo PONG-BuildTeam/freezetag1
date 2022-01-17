@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Defroster (RIGHT CLICK)","color":"gold","bold":true,"italic":false}',Lore:['{"text":"Right click on a frozen teammate to unfreeze them","color":"gray","italic":false}']},HideFlags:4,Unbreakable:1b,CustomModelData:396,FTDefroster:1b} 1

@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "requirement": {
+    "hit_by_player": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
@@ -9,8 +9,37 @@
           }
         }
       }
+    },
+    "is_team_ice": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "team": "TeamIce"
+          }
+        }
+      }
+    },
+    "is_team_snow": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "team": "TeamSnow"
+          }
+        }
+      }
     }
   },
+  "requirements": [
+    [
+      "hit_by_player"
+    ],
+    [
+      "is_team_ice",
+      "is_team_snow"
+    ]
+  ],
   "rewards": {
     "function": "freeze:gameplay/general/player/pvp/on_attacked"
   }
