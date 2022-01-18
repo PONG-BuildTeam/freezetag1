@@ -10,22 +10,22 @@
         }
       }
     },
-    "is_team_ice": {
+    "is_team_red": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
           "source_entity": {
-            "team": "TeamIce"
+            "team": "TeamRed"
           }
         }
       }
     },
-    "is_team_snow": {
+    "is_team_blue": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
           "source_entity": {
-            "team": "TeamSnow"
+            "team": "TeamBlue"
           }
         }
       }
@@ -36,8 +36,8 @@
       "hit_by_player"
     ],
     [
-      "is_team_ice",
-      "is_team_snow"
+      "is_team_red",
+      "is_team_blue"
     ]
   ],
   "rewards": {

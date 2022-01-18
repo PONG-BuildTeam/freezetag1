@@ -16,13 +16,14 @@ scoreboard players set $is_same compare_nums 0
 
 scoreboard objectives add player_ids dummy
 scoreboard objectives add freeze_spot_ids dummy
+scoreboard objectives add freeze_meter dummy
 
 ##Teams
-team add TeamIce
-team modify TeamIce color aqua
-team modify TeamIce friendlyFire true
-team modify TeamIce prefix {"text":"[ICE] ","color":"aqua"}
-team add TeamSnow
-team modify TeamSnow color gray
-team modify TeamSnow friendlyFire true
-team modify TeamSnow prefix {"text":"[SNOW] ","color":"gray"}
+team add TeamRed
+team modify TeamRed color red
+team modify TeamRed friendlyFire true
+team modify TeamRed prefix {"text":"[Red] ","color":"red"}
+team add TeamBlue
+team modify TeamBlue color aqua
+team modify TeamBlue friendlyFire true
+team modify TeamBlue prefix {"text":"[Blue] ","color":"aqua"}
