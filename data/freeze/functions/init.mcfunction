@@ -29,6 +29,9 @@ team add TeamBlue
 team modify TeamBlue color aqua
 team modify TeamBlue friendlyFire true
 team modify TeamBlue prefix {"text":"[Blue] ","color":"aqua"}
+team add TeamSpectate
+team modify TeamSpectate color dark_gray
+team modify TeamSpectate prefix {"text":"[Spectate] ","color":"dark_gray"}
 
 ##Gamerules
 gamerule announceAdvancements false
