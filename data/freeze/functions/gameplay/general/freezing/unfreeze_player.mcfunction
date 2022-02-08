@@ -1,3 +1,4 @@
+scoreboard players set @s freeze_timer 0
 scoreboard players operation $temp_freeze_id_compare freeze_spot_ids = @s player_ids
 execute as @e[tag=FTFreezeSpot] if score @s freeze_spot_ids = $temp_freeze_id_compare freeze_spot_ids run kill @s
 execute as @e[tag=FTFreezeBlocker] if score @s freeze_spot_ids = $temp_freeze_id_compare freeze_spot_ids run kill @s

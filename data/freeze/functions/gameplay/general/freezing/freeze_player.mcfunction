@@ -1,3 +1,4 @@
+scoreboard players set @s freeze_timer 0
 summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["FTFreezeSpot","FTNewFreezeSpot"]}
 execute as @e[tag=FTNewFreezeSpot] run function freeze:gameplay/general/freezing/link_freeze_spot
 item replace entity @s armor.head with minecraft:carved_pumpkin{display:{Name:'{"text":"Frozen Head","color":"aqua","bold":true,"italic":false}',Lore:['{"text":"You are frozen","color":"gray","italic":false}']},HideFlags:5,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}

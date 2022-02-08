@@ -1,0 +1,2 @@
+execute at @s positioned ~-15.5 ~ ~-15.5 store result score $temp domination_score if entity @a[team=TeamRed,dx=30,dy=100,dz=30,tag=!FTFrozen]
+scoreboard players operation $red_score domination_score += $temp domination_score
