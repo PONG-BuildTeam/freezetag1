@@ -1,1 +1,1 @@
-summon marker ~ ~ ~ {Tags:["FTControlPoint"]}
+summon marker ~ ~ ~ {Tags:["FTControlPoint","FTNewCP"]}
