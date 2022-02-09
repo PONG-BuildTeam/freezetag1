@@ -4,6 +4,7 @@ bossbar set minecraft:score players @a
 bossbar set minecraft:score visible true
 
 ##Set up players
+effect clear @a
 execute at @e[tag=FTBlueSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamBlue]
 execute at @e[tag=FTRedSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamRed]
 
@@ -11,6 +12,8 @@ execute at @e[tag=FTRedSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=T
 scoreboard players reset * domination_score
 scoreboard players set $blue_score domination_score 0
 scoreboard players set $red_score domination_score 0
+scoreboard players reset * death_check
+scoreboard players set @a[tag=FTPlaying] freeze_grace 100
 function freeze:gameplay/domination/hud/update_bossbar_score
 function freeze:gameplay/general/player/ids/give_player_ids
 schedule function freeze:gameplay/domination/control_point/tick/staggered_tick 1s replace

@@ -8,6 +8,7 @@ scoreboard players set $gamemode options 0
 scoreboard players set $map options 0
 scoreboard players set $items options 0
 
+scoreboard objectives add rng dummy
 scoreboard objectives add compare_nums dummy
 scoreboard players set $num1 compare_nums 0
 scoreboard players set $num2 compare_nums 0
@@ -16,6 +17,10 @@ scoreboard players set $is_same compare_nums 0
 scoreboard objectives add player_ids dummy
 scoreboard objectives add freeze_spot_ids dummy
 scoreboard objectives add freeze_timer dummy
+scoreboard objectives add freeze_grace dummy
+scoreboard objectives add death_check deathCount
+
+scoreboard objectives add item_giver_cooldown dummy
 
 #Domination
 scoreboard objectives add domination_score dummy
@@ -66,3 +71,6 @@ gamerule spectatorsGenerateChunks false
 ##Bossbars
 bossbar add score {"text":""}
 bossbar set score color yellow
+
+##RNG
+function freeze:general/rng/reset_seed
