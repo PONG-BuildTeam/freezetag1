@@ -1,1 +1,2 @@
 summon armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Silent:1b,Invisible:1b,PersistenceRequired:1b,Tags:["FTItemGiver"],DisabledSlots:4144959,Passengers:[{id:"minecraft:marker",Tags:["FTItemGiverMarker"],data:{Cooldown:200}}],ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"ABigDwarf"}}],CustomName:'{"text":"GRAB ME!","color":"gold","bold":true}'}
+setblock ~ ~-1 ~ oak_sign
