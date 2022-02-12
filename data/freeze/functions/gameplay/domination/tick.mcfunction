@@ -7,6 +7,7 @@ execute as @e[tag=FTControlPoint] run function freeze:gameplay/domination/contro
 
 #Items
 execute as @e[tag=FTItemGiver] run function freeze:gameplay/general/item_giver/tick/tick
+function freeze:gameplay/general/items/tick
 
 #Screw default Minecraft mechanics
 effect give @a minecraft:regeneration 999999 255 true

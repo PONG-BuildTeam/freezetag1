@@ -1,0 +1,3 @@
+tellraw @s [{"text":"[i] ","color":"green"},{"text":"Glowing all enemies on ","color":"white"},{"nbt":"data.Name","entity":"@e[tag=FTControlPoint,limit=1,sort=nearest]","color":"white","bold":true}]
+execute if entity @s[team=TeamBlue] at @s at @e[tag=FTControlPoint,limit=1,sort=nearest] positioned ~-15.5 ~ ~-15.5 as @a[team=TeamRed,dx=30,dy=100,dz=30] run function freeze:gameplay/general/items/glow/glow_me
+execute if entity @s[team=TeamRed] at @s at @e[tag=FTControlPoint,limit=1,sort=nearest] positioned ~-15.5 ~ ~-15.5 as @a[team=TeamBlue,dx=30,dy=100,dz=30] run function freeze:gameplay/general/items/glow/glow_me

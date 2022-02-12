@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Speed Boost","italic":false,"bold":true,"color":"aqua"}',Lore:['{"text":"Gives you speed 2 for 8 seconds.","color":"dark_gray"}']},HideFlags:127,Unbreakable:1b,CustomModelData:2,FTItem:1,FTItemSpeed:1} 1
