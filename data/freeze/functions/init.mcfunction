@@ -24,6 +24,7 @@ scoreboard objectives add item_giver_cooldown dummy
 
 #Domination
 scoreboard objectives add domination_score dummy
+scoreboard players set $3 domination_score 3
 
 ##Teams
 team add TeamRed
