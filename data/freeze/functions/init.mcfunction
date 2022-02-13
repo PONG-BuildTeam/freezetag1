@@ -22,6 +22,11 @@ scoreboard objectives add death_check deathCount
 
 scoreboard objectives add item_giver_cooldown dummy
 scoreboard objectives add use_item minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add use_item_bow minecraft.used:minecraft.bow
+scoreboard objectives add use_item_snowball minecraft.used:minecraft.snowball
+scoreboard objectives add snowball_fix dummy
+scoreboard players set $-1 snowball_fix -1
+scoreboard players set $num snowball_fix 1
 
 #Domination
 scoreboard objectives add domination_score dummy

@@ -7,6 +7,7 @@ bossbar set minecraft:score visible true
 effect clear @a
 execute at @e[tag=FTBlueSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamBlue]
 execute at @e[tag=FTRedSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamRed]
+tp @a[team=TeamSpectate] 57.5 50 8.5
 
 ##Start logic
 scoreboard players reset * domination_score

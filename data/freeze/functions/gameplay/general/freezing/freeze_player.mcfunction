@@ -1,3 +1,5 @@
+clear @s
+tag @s remove FTHasItem
 scoreboard players set @s freeze_timer 0
 summon minecraft:armor_stand ~ ~ ~ {Small:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["FTFreezeSpot","FTNewFreezeSpot"]}
 execute as @e[tag=FTNewFreezeSpot] run function freeze:gameplay/general/freezing/link_freeze_spot

@@ -1,0 +1,1 @@
+execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0

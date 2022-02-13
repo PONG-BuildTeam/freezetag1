@@ -1,0 +1,1 @@
+execute at @s run function freeze:gameplay/general/freezing/freeze_player
