@@ -13,8 +13,9 @@ tp @a[team=TeamSpectate] 57.5 50 8.5
 scoreboard players reset * domination_score
 scoreboard players set $blue_score domination_score 0
 scoreboard players set $red_score domination_score 0
+scoreboard players set $3 domination_score 3
 scoreboard players reset * death_check
-scoreboard players set @a[tag=FTPlaying] freeze_grace 100
+scoreboard players set @a[tag=FTPlaying] freeze_grace 200
 function freeze:gameplay/domination/hud/update_bossbar_score
 function freeze:gameplay/general/player/ids/give_player_ids
 schedule function freeze:gameplay/domination/control_point/tick/staggered_tick 1s replace

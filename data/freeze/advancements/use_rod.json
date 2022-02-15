@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "freeze:test"
+    "function": "freeze:gameplay/general/items/rod/use"
   }
 }
