@@ -5,5 +5,5 @@ execute if data entity @s SelectedItem.tag.FTItemCreeper run function freeze:gam
 execute if data entity @s SelectedItem.tag.FTItemSnowman run function freeze:gameplay/general/items/snowman/use
 execute if data entity @s SelectedItem.tag.FTItemFireRod run function freeze:gameplay/general/items/fire_rod/use
 scoreboard players set @s use_item 0
-clear @s
+clear @s minecraft:carrot_on_a_stick
 tag @s remove FTHasItem
