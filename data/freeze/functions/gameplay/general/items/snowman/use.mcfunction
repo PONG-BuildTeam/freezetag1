@@ -1,6 +1,7 @@
 execute at @s run summon snow_golem ~ ~ ~ {CustomNameVisible:1b,Pumpkin:0b,Tags:["FTSnowman","FTSnowmanInit"],ActiveEffects:[{Id:12b,Amplifier:0b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1}]}
 execute if entity @s[team=TeamRed] as @e[tag=FTSnowmanInit] run team join TeamRed @e[tag=FTSnowmanInit]
 execute if entity @s[team=TeamBlue] as @e[tag=FTSnowmanInit] run team join TeamBlue @e[tag=FTSnowmanInit]
+execute at @s run playsound minecraft:block.ladder.step master @s ~ ~ ~ 1 0.75
 execute as @e[tag=FTSnowmanInit] run scoreboard players set @s freeze_grace 0
 scoreboard players set $max rng 33
 function freeze:general/rng/rand

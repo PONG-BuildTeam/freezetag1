@@ -1,1 +1,2 @@
 tellraw @s [{"text":"[i] ","color":"green"},{"text":"There are no enemies on ","color":"white"},{"nbt":"data.Name","entity":"@e[tag=FTControlPoint,limit=1,sort=nearest]","color":"white","bold":true}]
+execute at @s run playsound minecraft:entity.player.burp master @s ~ ~ ~ 1 0.6
