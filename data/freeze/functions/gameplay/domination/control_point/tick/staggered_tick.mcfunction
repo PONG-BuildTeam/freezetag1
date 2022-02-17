@@ -8,6 +8,7 @@ execute as @e[tag=FTControlPoint] run function freeze:gameplay/domination/contro
 
 # Same problem as the point statuses 
 function freeze:gameplay/domination/hud/update_bossbar_score
+function freeze:gameplay/domination/logic/check_win
 
 # Recursion
 schedule function freeze:gameplay/domination/control_point/tick/staggered_tick 1s
