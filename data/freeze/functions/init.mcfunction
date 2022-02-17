@@ -3,6 +3,7 @@
 scoreboard objectives add gamestate dummy
 execute unless score $state gamestate matches 1.. run scoreboard players set $state gamestate 0
 
+scoreboard objectives add ready_up trigger
 scoreboard objectives add options dummy
 scoreboard players set $gamemode options 0
 scoreboard players set $map options 0
@@ -13,6 +14,9 @@ scoreboard objectives add compare_nums dummy
 scoreboard players set $num1 compare_nums 0
 scoreboard players set $num2 compare_nums 0
 scoreboard players set $is_same compare_nums 0
+scoreboard objectives add playerchange dummy
+scoreboard players set @a playerchange 0
+scoreboard players set $num_of_changes playerchange 0
 
 scoreboard objectives add player_ids dummy
 scoreboard objectives add freeze_spot_ids dummy
@@ -43,7 +47,12 @@ team modify TeamBlue friendlyFire true
 team modify TeamBlue prefix {"text":"[Blue] ","color":"aqua"}
 team add TeamSpectate
 team modify TeamSpectate color dark_gray
+team modify TeamSpectate friendlyFire false
 team modify TeamSpectate prefix {"text":"[Spectate] ","color":"dark_gray"}
+team add Ready
+team modify Ready color dark_green
+team modify Ready friendlyFire false
+team modify Ready prefix {"text":"[Ready] ","color":"dark_green"}
 
 ##Gamerules
 gamerule announceAdvancements false
