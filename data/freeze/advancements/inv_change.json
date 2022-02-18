@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "inv_change": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"FTInGame\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "freeze:gameplay/general/player/inv/inv_change"
+  }
+}
