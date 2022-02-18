@@ -5,6 +5,7 @@ tag @s remove FTHasItem
 tag @s remove FTPlaying
 tag @s remove FTInGame
 tag @s remove FTSpectating
+tag @s remove FTInvisible
 tag @s add FTInitSpawned
 clear @s
 effect clear @s
