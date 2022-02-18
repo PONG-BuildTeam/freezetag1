@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:carrot_on_a_stick",
+    "minecraft:bow",
+    "minecraft:arrow",
+    "minecraft:snowball",
+    "minecraft:fishing_rod"
+  ]
+}
