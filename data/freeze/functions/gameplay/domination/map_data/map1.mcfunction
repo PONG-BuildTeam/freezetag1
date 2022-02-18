@@ -2,8 +2,8 @@ function freeze:general/clean_entities
 
 #Control Points
 summon marker 64.5 0 80.5 {Tags:["FTControlPoint"],data:{Name:"Frozen Lake"}}
-summon marker 57.5 0 8.5 {Tags:["FTControlPoint"],data:{Name:"Damp Valley"}}
-summon marker 57.5 0 -76.5 {Tags:["FTControlPoint"],data:{Name:"Wet Cave"}}
+summon marker 57.5 0 8.5 {Tags:["FTControlPoint"],data:{Name:"Watch Tower"}}
+summon marker 57.5 0 -76.5 {Tags:["FTControlPoint"],data:{Name:"Gold Mine"}}
 
 #Spawnpoints
 summon marker 202.5 33 4.5 {Tags:["FTRedSpawn"]}

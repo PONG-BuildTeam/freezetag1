@@ -3,16 +3,16 @@
 # Thank you Lyfeless :)
 
 # Point 1
-execute if score $wet_cave_status domination_score matches 2 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Wet Cave","color":"red"},{"text":"]"}]'
-execute if score $wet_cave_status domination_score matches 1 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Wet Cave","color":"aqua"},{"text":"]"}]'
-execute if score $wet_cave_status domination_score matches 0 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Wet Cave","color":"white"},{"text":"]"}]'
-execute if score $wet_cave_status domination_score matches -1 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Wet Cave","color":"dark_purple"},{"text":"]"}]'
+execute if score $wet_cave_status domination_score matches 2 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Gold Mine","color":"red"},{"text":"]"}]'
+execute if score $wet_cave_status domination_score matches 1 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Gold Mine","color":"aqua"},{"text":"]"}]'
+execute if score $wet_cave_status domination_score matches 0 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Gold Mine","color":"white"},{"text":"]"}]'
+execute if score $wet_cave_status domination_score matches -1 run data modify storage freeze:hud point1_display set value '[{"text":"["},{"text":"Gold Mine","color":"dark_purple"},{"text":"]"}]'
 
 # Point 2
-execute if score $damp_valley_status domination_score matches 2 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Damp Valley","color":"red"},{"text":"]"}]'
-execute if score $damp_valley_status domination_score matches 1 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Damp Valley","color":"aqua"},{"text":"]"}]'
-execute if score $damp_valley_status domination_score matches 0 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Damp Valley","color":"white"},{"text":"]"}]'
-execute if score $damp_valley_status domination_score matches -1 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Damp Valley","color":"dark_purple"},{"text":"]"}]'
+execute if score $damp_valley_status domination_score matches 2 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Watch Tower","color":"red"},{"text":"]"}]'
+execute if score $damp_valley_status domination_score matches 1 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Watch Tower","color":"aqua"},{"text":"]"}]'
+execute if score $damp_valley_status domination_score matches 0 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Watch Tower","color":"white"},{"text":"]"}]'
+execute if score $damp_valley_status domination_score matches -1 run data modify storage freeze:hud point2_display set value '[{"text":"["},{"text":"Watch Tower","color":"dark_purple"},{"text":"]"}]'
 
 # Point 3
 execute if score $frozen_lake_status domination_score matches 2 run data modify storage freeze:hud point3_display set value '[{"text":"["},{"text":"Frozen Lake","color":"red"},{"text":"]"}]'
