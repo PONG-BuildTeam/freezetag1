@@ -19,7 +19,6 @@ scoreboard players set $damp_valley_status domination_score 0
 scoreboard players set $frozen_lake_status domination_score 0
 scoreboard players set $3 domination_score 3
 scoreboard players reset * death_check
-scoreboard players set @a[tag=FTInGame] freeze_grace 200
 function freeze:gameplay/domination/hud/update_bossbar_score
 function freeze:gameplay/general/player/ids/give_player_ids
 schedule function freeze:gameplay/domination/control_point/tick/staggered_tick 1s replace

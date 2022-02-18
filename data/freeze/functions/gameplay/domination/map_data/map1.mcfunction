@@ -23,3 +23,11 @@ execute positioned -27.5 40 4.5 run function freeze:gameplay/general/item_giver/
 execute positioned 31.5 33 35.5 run function freeze:gameplay/general/item_giver/summon_item_giver
 execute positioned 65.5 34 40.5 run function freeze:gameplay/general/item_giver/summon_item_giver
 execute as @e[tag=FTItemGiver] run scoreboard players set @s item_giver_cooldown 0
+
+#Barriers
+fill -93 34 9 -83 51 -1 minecraft:barrier replace air
+fill -84 50 0 -92 33 8 air replace minecraft:barrier
+fill 197 52 9 197 33 -2 minecraft:barrier replace air
+schedule function freeze:gameplay/domination/map_data/map1open 10s
+tellraw @a [{"text":"[i] ","color":"gray"},{"text":"Game will start in 10 seconds","color":"white"}]
+execute as @a at @s run playsound minecraft:block.fence_gate.close master @s ~ ~ ~
