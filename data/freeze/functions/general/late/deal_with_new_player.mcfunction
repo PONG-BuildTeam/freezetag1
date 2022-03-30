@@ -1,3 +1,6 @@
+#If left from previous match
+execute unless score @s match_id = $curr_id match_id run function freeze:general/late/player_from_previous_match
+
 #If was anywhere before the game started
 execute if entity @s[tag=!FTInGame,tag=!FTSpectating] run team leave @s
 execute if entity @s[tag=!FTInGame,tag=!FTSpectating] run tag @s remove FTPlaying

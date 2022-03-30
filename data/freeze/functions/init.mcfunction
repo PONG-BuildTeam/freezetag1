@@ -2,6 +2,8 @@
 #General
 scoreboard objectives add gamestate dummy
 execute unless score $state gamestate matches 1.. run scoreboard players set $state gamestate 0
+scoreboard objectives add match_id dummy
+execute unless score $curr_id match_id matches 1.. run scoreboard players set $curr_id match_id 0
 
 scoreboard objectives add ready_up trigger
 scoreboard objectives add options dummy
