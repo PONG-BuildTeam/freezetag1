@@ -10,7 +10,7 @@ scoreboard objectives add options dummy
 scoreboard players set $gamemode options 0
 scoreboard players set $map options 0
 scoreboard players set $items options 0
-scoreboard players set $win_score options 1000
+scoreboard players set $win_score options 2000
 scoreboard players set $overtime_score options 100
 
 scoreboard objectives add rng dummy
