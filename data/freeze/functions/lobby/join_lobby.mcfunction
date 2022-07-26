@@ -16,3 +16,4 @@ bossbar set minecraft:score players
 scoreboard players set @a playerchange 0
 scoreboard players set $num_of_changes playerchange 0
 tp @s -267.5 73 -17.5
+advancement grant @s only freeze:update_inventory

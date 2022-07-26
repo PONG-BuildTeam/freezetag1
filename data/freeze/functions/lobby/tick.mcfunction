@@ -19,3 +19,6 @@ execute if score $tick_teams temp_teams matches 1 as @a[tag=FTPlaying] run funct
 ##Late player detection
 execute as @a[tag=FTInGame] run function freeze:lobby/join_lobby
 execute as @a[tag=FTSpectating] run function freeze:lobby/join_lobby
+
+##Kill dropped items
+kill @e[type=item]
