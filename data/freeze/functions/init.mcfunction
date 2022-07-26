@@ -7,6 +7,7 @@ execute unless score $curr_id match_id matches 1.. run scoreboard players set $c
 
 scoreboard objectives add ready_up trigger
 scoreboard objectives add options dummy
+scoreboard objectives add countdown dummy
 scoreboard players set $gamemode options 0
 scoreboard players set $map options 0
 scoreboard players set $items options 0
