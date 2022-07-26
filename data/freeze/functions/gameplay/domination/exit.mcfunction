@@ -13,7 +13,7 @@ execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @
 scoreboard players reset * domination_score
 schedule clear freeze:gameplay/domination/control_point/tick/staggered_tick
 
+scoreboard players set $state gamestate 0
+
 ##Set up players
 execute as @a run function freeze:lobby/join_lobby
-
-scoreboard players set $state gamestate 0
