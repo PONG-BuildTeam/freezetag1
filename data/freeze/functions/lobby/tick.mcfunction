@@ -1,7 +1,8 @@
 ##Trigger
 execute as @a if score @s ready_up matches 1 run function freeze:lobby/ready_up
 execute as @a if score @s ready_up matches 2 run function freeze:lobby/spectate
-execute as @a if score @s ready_up matches 3 run function freeze:lobby/teams/start_team_select
+execute as @a if score @s ready_up matches 3 run function freeze:lobby/start_countdown/check_num_players
+execute as @a if score @s ready_up matches 4 run function freeze:lobby/start_countdown/interrupt
 execute as @a if score @s ready_up matches 1.. run scoreboard players set @s ready_up 0
 scoreboard players enable @a ready_up 
 
