@@ -6,4 +6,5 @@ execute as @a[team=TeamSpectate] run gamemode spectator @s
 execute as @a run tp @s -256.5 53 -10.5
 team modify TeamBlue friendlyFire false
 team modify TeamRed friendlyFire false
+tellraw @a [{"text":"[i] ","color":"aqua"},{"text":"Move to one side of the room to select your team! If you do not choose, you will be randomly assigned!","color":"white"}]
 schedule function freeze:lobby/teams/try_end_team 10s replace
