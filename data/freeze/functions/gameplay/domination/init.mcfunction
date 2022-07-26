@@ -24,3 +24,4 @@ function freeze:gameplay/general/player/ids/give_player_ids
 schedule function freeze:gameplay/domination/control_point/tick/staggered_tick 1s replace
 
 scoreboard players set $state gamestate 1
+clear @a

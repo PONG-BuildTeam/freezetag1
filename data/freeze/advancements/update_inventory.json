@@ -5,7 +5,7 @@
       }
     },
     "rewards": {
-      "function": "freeze:lobby/fix_inventory"
+      "function": "freeze:general/check_state"
     }
   }
   
