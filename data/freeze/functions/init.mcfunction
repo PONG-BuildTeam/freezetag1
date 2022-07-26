@@ -87,6 +87,7 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
+gamerule sendCommandFeedback false
 
 ##Bossbars
 bossbar add score {"text":""}
