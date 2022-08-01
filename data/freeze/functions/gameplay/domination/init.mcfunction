@@ -7,7 +7,6 @@ bossbar set minecraft:score visible true
 effect clear @a
 execute at @e[tag=FTBlueSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamBlue]
 execute at @e[tag=FTRedSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamRed]
-execute as @a[tag=FTInGame] run function freeze:gameplay/general/player/inv/give_armor
 tp @a[team=TeamSpectate] 57.5 50 8.5
 
 ##Start logic
@@ -25,3 +24,4 @@ schedule function freeze:gameplay/domination/control_point/tick/staggered_tick 1
 
 scoreboard players set $state gamestate 1
 clear @a
+execute as @a[tag=FTInGame] run function freeze:gameplay/general/player/inv/give_armor
