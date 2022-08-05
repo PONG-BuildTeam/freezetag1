@@ -8,7 +8,6 @@ execute if score $item_snowball options matches 1 run data modify storage freeze
 execute if score $item_snowman options matches 1 run data modify storage freeze:item_list List append value 6
 execute if score $item_fire_rod options matches 1 run data modify storage freeze:item_list List append value 7
 execute if score $item_revive options matches 1 run data modify storage freeze:item_list List append value 8
-
 scoreboard players set $item_num options 0
 execute if score $item_invis options matches 1 run scoreboard players add $item_num options 1
 execute if score $item_speed options matches 1 run scoreboard players add $item_num options 1

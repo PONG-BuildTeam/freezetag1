@@ -1,6 +1,6 @@
 ##Set up map
-function freeze:gameplay/domination/map_data/map1
 function freeze:gameplay/general/item_giver/reload_item_list
+function freeze:gameplay/domination/map_data/map1
 bossbar set minecraft:score players @a
 bossbar set minecraft:score visible true
 
