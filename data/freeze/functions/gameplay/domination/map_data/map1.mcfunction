@@ -12,17 +12,7 @@ summon marker -87.5 34 4.5 {Tags:["FTBlueSpawn"]}
 spawnpoint @a[team=TeamBlue] -88 34 4 -90
 
 #Item Givers
-execute positioned -78.5 32 -5.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned -36.5 35 -60.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned 153.5 40 -59.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned 190.5 31 -4.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned 151.5 39 85.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned -39.5 37 84.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned 140.5 46 4.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned -27.5 40 4.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned 31.5 33 35.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute positioned 65.5 34 40.5 run function freeze:gameplay/general/item_giver/summon_item_giver
-execute as @e[tag=FTItemGiver] run scoreboard players set @s item_giver_cooldown 0
+execute if score $items options matches 1 run function freeze:gameplay/general/item_giver/summon_map1
 
 #Barriers
 fill -93 34 9 -83 51 -1 minecraft:barrier replace air

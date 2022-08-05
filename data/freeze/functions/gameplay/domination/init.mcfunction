@@ -1,5 +1,6 @@
 ##Set up map
-execute if score $map options matches 0 run function freeze:gameplay/domination/map_data/map1
+function freeze:gameplay/domination/map_data/map1
+function freeze:gameplay/general/item_giver/reload_item_list
 bossbar set minecraft:score players @a
 bossbar set minecraft:score visible true
 

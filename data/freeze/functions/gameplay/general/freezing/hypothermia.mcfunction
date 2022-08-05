@@ -5,6 +5,6 @@ clear @s #freeze:items
 tag @s remove FTHasItem
 kill @s
 scoreboard players reset @s death_check
-scoreboard players set @s freeze_grace 200
+scoreboard players operation @s freeze_grace = $heat_time options
 tellraw @a [{"selector":"@s"},{"text":" has succumb to hypothermia","color":"white"}]
 function freeze:gameplay/general/player/inv/give_armor

@@ -8,11 +8,25 @@ execute unless score $curr_id match_id matches 1.. run scoreboard players set $c
 scoreboard objectives add ready_up trigger
 scoreboard objectives add options dummy
 scoreboard objectives add countdown dummy
-scoreboard players set $gamemode options 0
-scoreboard players set $map options 0
-scoreboard players set $items options 0
-scoreboard players set $win_score options 2000
-scoreboard players set $overtime_score options 100
+scoreboard players set $-1 options -1
+execute unless score $items options matches -1 run scoreboard players set $items options 1
+execute unless score $item_bow options matches -1 run scoreboard players set $item_bow options 1
+execute unless score $item_creeper options matches -1 run scoreboard players set $item_creeper options 1
+execute unless score $item_fire_rod options matches -1 run scoreboard players set $item_fire_rod options 1
+execute unless score $item_glow options matches -1 run scoreboard players set $item_glow options 1
+execute unless score $item_invis options matches -1 run scoreboard players set $item_invis options 1
+execute unless score $item_revive options matches -1 run scoreboard players set $item_revive options 1
+execute unless score $item_snowball options matches -1 run scoreboard players set $item_snowball options 1
+execute unless score $item_snowman options matches -1 run scoreboard players set $item_snowman options 1
+execute unless score $item_speed options matches -1 run scoreboard players set $item_speed options 1
+#default 2000
+execute unless score $win_score options matches 0.. run scoreboard players set $win_score options 2000
+#default 100
+execute unless score $overtime_deduction options matches 0.. run scoreboard players set $overtime_deduction options 100
+#default 200
+execute unless score $freeze_time options matches 0.. run scoreboard players set $freeze_time options 200
+#default 200
+execute unless score $heat_time options matches 0.. run scoreboard players set $heat_time options 200
 
 scoreboard objectives add rng dummy
 scoreboard objectives add compare_nums dummy
@@ -88,7 +102,7 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
-gamerule sendCommandFeedback false
+gamerule sendCommandFeedback true
 
 ##Bossbars
 bossbar add score {"text":""}
