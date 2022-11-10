@@ -3,7 +3,7 @@ scoreboard players set $wet_cave_status domination_score 0
 scoreboard players set $damp_valley_status domination_score 0
 scoreboard players set $frozen_lake_status domination_score 0
 
-# The actual thing i want to tick every 
+# The actual thing I want to tick every tick
 execute as @e[tag=FTControlPoint] run function freeze:gameplay/domination/control_point/tick/tick_cps
 
 # Same problem as the point statuses 

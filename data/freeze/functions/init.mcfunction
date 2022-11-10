@@ -5,7 +5,11 @@ execute unless score $state gamestate matches 1.. run scoreboard players set $st
 scoreboard objectives add match_id dummy
 execute unless score $curr_id match_id matches 1.. run scoreboard players set $curr_id match_id 0
 
+#Triggers
 scoreboard objectives add ready_up trigger
+scoreboard objectives add surrender trigger
+
+#Options
 scoreboard objectives add options dummy
 scoreboard objectives add countdown dummy
 scoreboard players set $-1 options -1
@@ -28,6 +32,7 @@ execute unless score $freeze_time options matches 0.. run scoreboard players set
 #default 200
 execute unless score $heat_time options matches 0.. run scoreboard players set $heat_time options 200
 
+#RNG and Logic
 scoreboard objectives add rng dummy
 scoreboard objectives add compare_nums dummy
 scoreboard players set $num1 compare_nums 0
@@ -37,12 +42,14 @@ scoreboard objectives add playerchange dummy
 scoreboard players set @a playerchange 0
 scoreboard players set $num_of_changes playerchange 0
 
+#Gameplay
 scoreboard objectives add player_ids dummy
 scoreboard objectives add freeze_spot_ids dummy
 scoreboard objectives add freeze_timer dummy
 scoreboard objectives add freeze_grace dummy
 scoreboard objectives add death_check deathCount
 
+#Abilities
 scoreboard objectives add item_giver_cooldown dummy
 scoreboard objectives add use_item minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add use_item_bow minecraft.used:minecraft.bow

@@ -1,4 +1,4 @@
-# yes i partially stole this from a cloudwolf video
+# yes i partially stole this :) 
 scoreboard players set #const rng 1103515245
 scoreboard players operation $rand rng *= #const rng
 scoreboard players add $rand rng 12345
