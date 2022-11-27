@@ -1,2 +1,2 @@
-item replace entity @s armor.head with minecraft:player_head{SkullOwner:"ABigDwarf"}
+item replace entity @s armor.head with minecraft:player_head{SkullOwner:{Id:[I;-1915369139,837830495,-1294780863,1101422121],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM0OTcwZWE5MWFiMDZlY2U1OWQ0NWZjZTc2MDRkMjU1NDMxZjJlMDNhNzM3YjIyNjA4MmM0Y2NlMWFjYTFjNCJ9fX0="}]}}}
 data modify entity @s CustomName set value '{"text":"GRAB ME!","color":"gold","bold":true}'
