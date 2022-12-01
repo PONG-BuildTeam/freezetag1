@@ -1,1 +1,1 @@
-tellraw @a[team=TeamBlue] [{"text":"[i]","color":"aqua"},{"text":" Vote to surrender failed.","color":"white"}]
+tellraw @a[team=TeamBlue] [{"text":"[i] ","color":"aqua"},{"text":"Vote to surrender failed.","color":"white"}]
