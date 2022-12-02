@@ -21,3 +21,6 @@ fill 197 52 9 197 33 -2 minecraft:barrier replace air
 schedule function freeze:gameplay/domination/map_data/map1open 10s
 tellraw @a [{"text":"[i] ","color":"gray"},{"text":"Game will start in 10 seconds","color":"white"}]
 execute as @a at @s run playsound minecraft:block.fence_gate.close master @s ~ ~ ~
+
+#Egg
+function freeze:gameplay/domination/logic/egg/reset

@@ -1,0 +1,1 @@
+execute if block 55 38 -10 minecraft:spruce_button[powered=true] run function freeze:gameplay/domination/logic/egg/summon

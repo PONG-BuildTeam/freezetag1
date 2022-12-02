@@ -5,6 +5,7 @@ execute if data entity @s SelectedItem.tag.FTItemCreeper run function freeze:gam
 execute if data entity @s SelectedItem.tag.FTItemSnowman run function freeze:gameplay/general/items/snowman/use
 execute if data entity @s SelectedItem.tag.FTItemFireRod run function freeze:gameplay/general/items/fire_rod/use
 execute if data entity @s SelectedItem.tag.FTItemRevive run function freeze:gameplay/general/items/revive/use
+execute if data entity @s SelectedItem.tag.FTItemEgg run function freeze:gameplay/domination/logic/egg/use
 scoreboard players set @s use_item 0
 clear @s #freeze:items
 tag @s remove FTHasItem

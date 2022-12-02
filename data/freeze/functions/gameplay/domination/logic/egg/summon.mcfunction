@@ -1,0 +1,3 @@
+summon item 57.5 40 8.5 {CustomNameVisible:1b,CustomName:'{"text":"Guapo","color":"yellow","bold":true}',Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Guapo","color":"yellow","bold":true,"italic":false}',Lore:['{"text":"A friendly fish to help you on your journey","color":"dark_purple"}','{"text":"Right click to don him","color":"dark_gray"}']},HideFlags:127,Unbreakable:1b,CustomModelData:8,FTItemEgg:1}}}
+function freeze:gameplay/domination/logic/egg/play_song
+setblock 55 38 -10 air

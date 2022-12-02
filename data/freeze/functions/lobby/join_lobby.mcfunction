@@ -7,6 +7,7 @@ tag @s remove FTInGame
 tag @s remove FTSpectating
 tag @s remove FTInvisible
 tag @s remove FTVoted
+tag @s remove FTGuapo
 tag @s add FTInitSpawned
 clear @s
 effect clear @s

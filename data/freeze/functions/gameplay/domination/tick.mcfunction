@@ -20,3 +20,6 @@ function freeze:general/late/player_amount_change_detection
 #Surrender
 scoreboard players enable @a[tag=FTPlaying] surrender
 execute as @a unless score @s surrender matches 0 run function freeze:gameplay/domination/logic/surrender/start_vote
+
+#Egg
+function freeze:gameplay/domination/logic/egg/tick
