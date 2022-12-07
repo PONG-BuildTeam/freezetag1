@@ -6,6 +6,7 @@ bossbar set minecraft:score visible true
 
 ##Set up players
 effect clear @a
+scoreboard players set @a surrender 0
 execute at @e[tag=FTBlueSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamBlue]
 execute at @e[tag=FTRedSpawn] run spreadplayers ~ ~ 1 4 under 35 false @a[team=TeamRed]
 tp @a[team=TeamSpectate] 57.5 50 8.5
