@@ -62,6 +62,9 @@ scoreboard players set $num snowball_fix 1
 scoreboard objectives add domination_score dummy
 scoreboard players set $3 domination_score 3
 
+##Forceload
+forceload add 201 104 -88 -89
+
 ##Teams
 team add TeamRed
 team modify TeamRed color red
