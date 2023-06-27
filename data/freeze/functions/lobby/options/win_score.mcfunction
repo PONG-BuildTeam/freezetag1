@@ -3,6 +3,6 @@ execute if score $win_score options matches 3001.. run scoreboard players set $w
 
 execute at @s run playsound minecraft:block.note_block.bit master @s
 
-execute if score $win_score options matches 1000 run data merge block -257 73 -29 {Text2:'{"text":"Win Score:","bold":true,"color":"aqua"}',Text3:'{"text":"1000 points","color":"white"}'}
-execute if score $win_score options matches 2000 run data merge block -257 73 -29 {Text2:'{"text":"Win Score:","bold":true,"color":"aqua"}',Text3:'{"text":"2000 points","color":"white"}'}
-execute if score $win_score options matches 3000 run data merge block -257 73 -29 {Text2:'{"text":"Win Score:","bold":true,"color":"aqua"}',Text3:'{"text":"3000 points","color":"white"}'} 
+execute if score $win_score options matches 1000 run data modify block -257 73 -29 front_text.messages[2] set value '{"text":"1000","color":"white"}'
+execute if score $win_score options matches 2000 run data modify block -257 73 -29 front_text.messages[2] set value '{"text":"2000","color":"white"}'
+execute if score $win_score options matches 3000 run data modify block -257 73 -29 front_text.messages[2] set value '{"text":"3000","color":"white"}' 

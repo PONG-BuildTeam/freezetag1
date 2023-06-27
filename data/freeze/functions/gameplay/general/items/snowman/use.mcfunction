@@ -3,7 +3,7 @@ execute if entity @s[team=TeamRed] as @e[tag=FTSnowmanInit] run team join TeamRe
 execute if entity @s[team=TeamBlue] as @e[tag=FTSnowmanInit] run team join TeamBlue @e[tag=FTSnowmanInit]
 execute at @s run playsound minecraft:block.ladder.step master @s ~ ~ ~ 1 0.75
 execute as @e[tag=FTSnowmanInit] run scoreboard players set @s freeze_grace 0
-scoreboard players set $max rng 27
+scoreboard players set $max rng 30
 function freeze:general/rng/rand
 execute if score $out rng matches 0 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Horatio"}'
 execute if score $out rng matches 1 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Frostied"}'
@@ -32,5 +32,8 @@ execute if score $out rng matches 23 as @e[tag=FTSnowmanInit] run data modify en
 execute if score $out rng matches 24 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Jack Frost"}'
 execute if score $out rng matches 25 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Snow White"}'
 execute if score $out rng matches 26 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Jon Snow"}'
+execute if score $out rng matches 27 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Gabe","color":"gray"}'
+execute if score $out rng matches 28 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Revolver Witt"}'
+execute if score $out rng matches 29 as @e[tag=FTSnowmanInit] run data modify entity @s CustomName set value '{"text":"Glub Glub"}'
 tellraw @s [{"text":"[i] ","color":"gold"},{"text":"You have summoned ","color":"white"},{"nbt":"CustomName","entity":"@e[tag=FTSnowmanInit]","interpret":true,"bold":true},{"text":" the Snowman.","color":"white"}]
 tag @e[tag=FTSnowmanInit] remove FTSnowmanInit
