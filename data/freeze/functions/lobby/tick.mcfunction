@@ -21,10 +21,10 @@ execute as @a if score @s ready_up matches 1.. run scoreboard players set @s rea
 scoreboard players enable @a ready_up 
 
 ##Lobby stuff (spawnpoint, init spawn, effects)
-effect give @a minecraft:regeneration 999999 255 true
-effect give @a minecraft:saturation 999999 255 true
-effect give @a minecraft:resistance 999999 255 true
-effect give @a minecraft:weakness 999999 255 true
+effect give @a minecraft:regeneration infinite 255 true
+effect give @a minecraft:saturation infinite 255 true
+effect give @a minecraft:resistance infinite 255 true
+effect give @a minecraft:weakness infinite 255 true
 spawnpoint @a -268 73 -18
 execute as @a[tag=!FTInitSpawned] run function freeze:lobby/join_lobby
 

@@ -8,8 +8,8 @@ execute at @s run particle minecraft:snowflake ~ ~1.5 ~ 0.1 0.1 0.1 0.1 50 force
 execute at @s run particle minecraft:block ice ~ ~1.5 ~ 0.5 0.8 0.5 100 25 force
 execute at @s run playsound minecraft:block.amethyst_cluster.break master @a ~ ~ ~ 1 0.5
 effect clear @s
-effect give @s minecraft:slowness 999999 255 true
-effect give @s minecraft:jump_boost 999999 128 true
-effect give @s minecraft:weakness 999999 255 true
+effect give @s minecraft:slowness infinite 255 true
+effect give @s minecraft:jump_boost infinite 128 true
+effect give @s minecraft:weakness infinite 255 true
 execute unless entity @a[tag=FTFrozen] run schedule function freeze:gameplay/general/freezing/tick/staggered_tick 2t replace
 tag @s add FTFrozen

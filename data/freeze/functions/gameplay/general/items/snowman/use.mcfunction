@@ -1,4 +1,4 @@
-execute at @s run summon snow_golem ~ ~ ~ {CustomNameVisible:1b,Pumpkin:0b,Tags:["FTSnowman","FTSnowmanInit"],ActiveEffects:[{Id:12,Amplifier:0b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:1}]}
+execute at @s run summon snow_golem ~ ~ ~ {CustomNameVisible:1b,Pumpkin:0b,Tags:["FTSnowman","FTSnowmanInit"],ActiveEffects:[{Id:12,Amplifier:0b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:1}]}
 execute if entity @s[team=TeamRed] as @e[tag=FTSnowmanInit] run team join TeamRed @e[tag=FTSnowmanInit]
 execute if entity @s[team=TeamBlue] as @e[tag=FTSnowmanInit] run team join TeamBlue @e[tag=FTSnowmanInit]
 execute at @s run playsound minecraft:block.ladder.step master @s ~ ~ ~ 1 0.75
