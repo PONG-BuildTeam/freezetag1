@@ -3,6 +3,6 @@ execute as @a if score @s use_item matches 1.. run function freeze:gameplay/gene
 execute as @a if score @s use_item_bow matches 1.. run function freeze:gameplay/general/items/bow/use_bow
 execute as @a if score @s use_item_snowball matches 1.. run function freeze:gameplay/general/items/snowball/use_snowball
 
-execute as @a[tag=FTInvisible] unless entity @s[nbt={ActiveEffects:[{Id:14}]}] run function freeze:gameplay/general/items/invis/tick
+execute as @a[tag=FTInvisible] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run function freeze:gameplay/general/items/invis/tick
 function freeze:gameplay/general/items/bow/tick
 function freeze:gameplay/general/items/snowball/tick
